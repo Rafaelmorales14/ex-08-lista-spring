@@ -16,19 +16,19 @@ public class DepartamentoService {
         this.repository = repository;
     }
 
-    private DepartamentoModel save(DepartamentoModel departamentoModel) {
+    public DepartamentoModel save(DepartamentoModel departamentoModel) {
         return repository.save(departamentoModel);
     }
 
-    private List<DepartamentoModel> findAll() {
+    public List<DepartamentoModel> findAll() {
         return repository.findAll();
     }
 
-    private Optional<DepartamentoModel> findById(Long id) {
+    public Optional<DepartamentoModel> findById(Long id) {
         return repository.findById(id);
     }
 
-    private void deleteById(Long id) {
+    public void delete(Long id) {
         repository.deleteById(id);
     }
 
